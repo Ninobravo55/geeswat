@@ -1,0 +1,52 @@
+[general]
+name=geeSWAT
+qgisMinimumVersion=3.16
+qgisMaximumVersion=4.99
+description=geeSWAT is a QGIS plugin that integrates Google Earth Engine to support SWAT hydrological modelling workflows.
+version=1.2.3
+author=Geomatica Ambiental
+email=nino@geomatica.pe
+authorUrl=https://www.geomatica.pe/
+
+about=geeSWAT is a QGIS plugin that integrates Google Earth Engine to support
+    SWAT (Soil and Water Assessment Tool) hydrological modelling workflows.
+
+    Connects QGIS with GEE to download and preprocess spatial data required
+    for hydrological basin delineation and SWAT model setup.
+
+icon=icon.png
+
+tracker=https://github.com/Ninobravo55/geeSWAT/issues
+repository=https://github.com/Ninobravo55/geeSWAT
+homepage=https://www.geomatica.pe/
+category=Plugins
+tags=swat, gee, google earth engine, dem, mde, soil, landuse, elevation, copernicus, merit, hydrological, basin, watershed, cuenca, modelo hidrologico, descarga, raster, peru
+hasProcessingProvider=yes
+server=False
+experimental=False
+deprecated=False
+license=GPL version 2 or any later version
+licenseUrl=https://www.gnu.org/licenses/gpl-2.0.html
+
+changelog=1.2.3
+    - Limpieza de empaquetado: eliminados __pycache__ y archivos de desarrollo no usados en runtime (notebooks, hojas de cálculo).
+    - Repositorio y tracker de issues actualizados a GitHub.
+    1.2.2
+    - Ajustes menores y correcciones internas.
+    1.2.1
+    - Added SOIL tab with suelo_FAO and OpenLandMap Soil options and Soil_lookup.csv generation.
+    - Added LANDUSE tab with Copernicus 2019 and ESA GlobCover 2009 options and Landuse_lookup.csv generation.
+    - Added premium developer contact card in Acerca de tab.
+    - Added project CRS reprojection on download.
+    1.1.0
+    - MDE download moved into the main dialog as a full integrated interface
+    - New AOI tab: load from vector layer or draw polygon interactively on the map
+    - AOI geometry card: area, perimeter, centroid, UTM zone, bbox
+    - New MDE tab: DEM source selector (9 sources), scale spinner (0 = native resolution)
+    - Output auto-routed to output_folder/DEM/project_dem_timestamp.tif
+    - Live log panel (console-style) with QThread download worker
+    - Progress bar and Cancel button during download
+    1.0.0
+    - Initial release: Config GEE tab (authentication, project, output folder)
+    - MDE menu: Download DEM from GEE (9 sources, dual strategy direct/Drive)
+
